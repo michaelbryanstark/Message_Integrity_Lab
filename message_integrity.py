@@ -6,13 +6,14 @@ content = input("Enter a word to be encrypted \n==> ")
 hash_object = hashlib.sha256(content.encode('utf-8'))
 hex_dig = hash_object.hexdigest()
 
-print(f"Hashed String: {hex_dig}")
+# commented out the print function so the hash is not visible
+# print(f"Hashed String: {hex_dig}")
 
 # Original hashed content storage
 original_hash = hex_dig
 
 # Content to verify
-verify_data = content
+verify_data = input("Enter the word you encrypted \n==> ")
 verify_hash = hashlib.sha256(verify_data.encode('utf-8')).hexdigest()
 
 # Compare the hashes
