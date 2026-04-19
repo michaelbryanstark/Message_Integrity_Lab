@@ -1,4 +1,4 @@
-# Message Integrity Lab
+# Hash Integrity for messages
 
 You are to create a Python code to demonstrate message integrity. 
 You can use whatever hash function you want but my opinion SHA-256 is easiest. 
